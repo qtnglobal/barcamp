@@ -363,3 +363,9 @@ footer #share div {
   word-spacing: 9px;
   font-size: 20px;
 }
+#follow > .facebook {
+  background: url(../images/follow_icons.png) no-repeat scroll 0px -55px ;
+}
+#follow > .twitter {
+  background: url(../images/follow_icons.png) no-repeat scroll 0px -28px ;
+}
