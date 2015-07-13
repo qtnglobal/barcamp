@@ -44,7 +44,7 @@ body {
   background: #F9F9F9 none repeat scroll 0 0 ;
 }
 #cover {
-  background: url(../images/amask_slant1.png) 0 0 repeat,url(../images/cover.JPG) 50% 0 no-repeat fixed;
+  background: url(../images/amask_slant.png) 0 0 repeat,url(../images/cover.JPG) 50% 0 no-repeat fixed;
   height: 814px;
   overflow: hidden;
   position: relative;
