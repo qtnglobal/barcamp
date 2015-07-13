@@ -2505,14 +2505,14 @@ table td[class*="span"],table th[class*="span"],.row-fluid table td[class*="span
     *margin-right:.3em;
     line-height:14px;
     vertical-align:text-top;
-    background-image:url("../img/glyphicons-halflings.png");
+    background-image:url("../images/glyphicons-halflings.png");
     background-position:14px 14px;
     background-repeat:no-repeat;
     margin-top:1px
 }
 
 .icon-white,.nav-pills>.active>a>[class^="icon-"],.nav-pills>.active>a>[class*=" icon-"],.nav-list>.active>a>[class^="icon-"],.nav-list>.active>a>[class*=" icon-"],.navbar-inverse .nav>.active>a>[class^="icon-"],.navbar-inverse .nav>.active>a>[class*=" icon-"],.dropdown-menu>li>a:hover>[class^="icon-"],.dropdown-menu>li>a:hover>[class*=" icon-"],.dropdown-menu>.active>a>[class^="icon-"],.dropdown-menu>.active>a>[class*=" icon-"],.dropdown-submenu:hover>a>[class^="icon-"],.dropdown-submenu:hover>a>[class*=" icon-"]{
-    background-image:url("../img/glyphicons-halflings-white.png")
+    background-image:url("../images/glyphicons-halflings.png")
 }
 
 .icon-glass{
@@ -4741,7 +4741,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{
 
 .navbar .nav{
     position:relative;
-    left:0;
+    /*left:0;*/
     display:block;
     float:left;
     margin:0 10px 0 0
@@ -5324,7 +5324,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{
     -moz-box-shadow:0 3px 7px rgba(0,0,0,0.3);
     box-shadow:0 3px 7px rgba(0,0,0,0.3);
     -webkit-background-clip:padding-box;
-    -moz-background-clip:padding-box;
+    /*-moz-background-clip: padding-box;*/
     background-clip:padding-box;
     outline:0
 }
@@ -6232,7 +6232,10 @@ a.label:hover,a.badge:hover{
 }
 
 .affix{
-    position:fixed
+    position:fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
 }
 
 /*!
@@ -8202,9 +8205,10 @@ a.label:hover,a.badge:hover{
         clear:both
     }
 
-    .nav-collapse .nav{
+    nav .navbar .nav-collapse .nav{
         float:none;
-        margin:0 0 10px
+        margin:0 0 10px;
+        background-color: #ffffff
     }
 
     .nav-collapse .nav>li{

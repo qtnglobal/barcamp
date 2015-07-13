@@ -36,6 +36,7 @@ nav .navbar .brand {
 nav .navbar .nav {
   float: right;
   margin-top: 15px;
+  right: 0;
 }
 body {
   font-size: 16px;
@@ -43,10 +44,20 @@ body {
   background: #F9F9F9 none repeat scroll 0 0 ;
 }
 #cover {
-  background: url(../images/mask_slant.png) 0 0 repeat,url(../images/cover.png) 50% 0 no-repeat fixed;
+  background: url(../images/amask_slant1.png) 0 0 repeat,url(../images/cover.JPG) 50% 0 no-repeat fixed;
   height: 814px;
   overflow: hidden;
   position: relative;
+  background-size: 5px 5px,cover;
+}
+#gridtile1{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  content: " ";
+  background: url(../images/gridtile.png) 0 0 repeat;
 }
 #cover #cover-desc {
   bottom: 0;
@@ -73,9 +84,10 @@ body {
   font-size: 18px;
   margin: 0px auto;
   line-height: 26px;
+  text-align: center;
 }
 #cover #cover-txt {
-  background: transparent url("../images/cover_txt.png") no-repeat fixed 50% 0px / auto 100%;
+  background: transparent url("../images/cover_txt.png") no-repeat fixed 50% 0px / auto 80%;
   z-index: 140;
 }
 #cover #cover-bk1 {
@@ -379,7 +391,7 @@ footer #share div {
   margin-top: -20px;
 }
 .title-v1 h1, .title-v1 h2 {
-  color: #ffff;
+  color: #ffffff;
   font-size: 35px;
   position: relative;
   margin-bottom: 15px;
@@ -410,8 +422,22 @@ footer #share div {
 }
 .col-md-4 > .news-v1-in{
   text-align: center;
+  padding: 5px;
 }
 .news-v1-in > img {
   width: 370px;
   height: 233px;
+}
+div > iframe#twitter-widget-0{
+  display: none;
+  height: 0;
+}
+.affix .container{
+  position: fixed;
+  width: 100%;
+}
+@media (max-width: 600px){
+  #cover{
+    display: none
+  }
 }

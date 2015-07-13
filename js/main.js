@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 function scrollHandle() {
 	var scrollTop = $(window).scrollTop();
-	if(scrollTop > 100) {
+	if(scrollTop > 500) {
 		$("#cover-desc em").fadeOut("slow");
 	} else {
 		$("#cover-desc em").fadeIn("slow");
